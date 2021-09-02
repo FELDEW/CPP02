@@ -1,14 +1,16 @@
 NAME		=	fixed
 
 SRCS		=	./main.cpp \
-				./Fixed.cpp
+				./Fixed.cpp \
+				./bsp.cpp \
+				./Point.cpp
 	
 OBJS		=	$(SRCS:.cpp=.o)
 
 CPP			=	clang++
 
 %.o:		%.cpp 
-			$(CPP) $(CFLAGS)   -c $< -o $(<:.cpp=.o)
+			$(CPP) $(CFLAGS)  -c $< -o $(<:.cpp=.o)
 
 CFLAGS		=	-Wall -Wextra -Werror -std=c++98
 
