@@ -12,7 +12,7 @@ class Point
 		~Point();
 		Point(const Point& origin);
 		Point(const float x, const float y);
-		Point& operator=(const Point& origin);
+		Point& operator=(const Point&);
 		Fixed const getX() const;
 		Fixed const getY() const;
 	private:

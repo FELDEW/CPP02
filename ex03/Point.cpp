@@ -24,16 +24,15 @@ Point::Point(float const newx, float const newy):x(newx), y(newy)
 
 Fixed const Point::getX() const
 {
-	return(this->x);
+	return (this->x);
 }
 
 Fixed const Point::getY() const
 {
-	return(this->y);
+	return (this->y);
 }
 
-Point& Point::operator=(const Point& origin)
+Point& Point::operator=(const Point&)
 {
-	origin.getX();
 	return (*this);
 }
