@@ -43,6 +43,8 @@ void Fixed::setRawBits( int const raw )
 Fixed& Fixed::operator=(const Fixed& origin)
 {
 	std::cout << "Assignation operator called" << std::endl;
+	if (this == &origin)
+		return (*this);
 	value = origin.getRawBits();
 	return (*this);
 }

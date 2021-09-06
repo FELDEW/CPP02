@@ -37,6 +37,8 @@ void Fixed::setRawBits( int const raw )
 
 Fixed& Fixed::operator=(const Fixed& origin)
 {
+	if (this == &origin)
+		return (*this);
 	value = origin.getRawBits();
 	return (*this);
 }
